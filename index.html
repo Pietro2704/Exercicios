@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -53,85 +54,128 @@
         </section>
 
         <section id="looping">
-            <h2>Condições</h2>
-            <!-- Desafio 1 -->
+            <h2>Loopings</h2>
             <article>
-                <h4>Votar e Dirigir</h4>
-                <p>Crie um programa que peça a idade de uma pessoa e fale se ela pode votar e/ou dirigir</p>
+                <h4>Contador de cliques</h4>
+                <p>Conte quantas vezes o botão foi clicado e mostre o total na tela.</p>
                 <div class="resposta">
-
+                    <button id="btnContar">Clique aqui</button>
+                    <p>Total de cliques: <span id="contador">0</span></p>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Adicionar 10 itens numerados</h4>
+                <p>Ao clicar no botão, adicione 10 itens numerados (1 a 10) em uma lista abaixo.</p>
                 <div class="resposta">
-
+                    <button id="btnListar">Gerar Lista</button>
+                    <ul id="listaNumeros"></ul>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Criação dinâmica de elementos</h4>
+                <p>Ao clicar no botão, crie 5 caixas coloridas (divs) com tamanhos e cores diferentes.</p>
                 <div class="resposta">
-
+                    <button id="btnCriarCaixas">Criar Caixas</button>
+                    <div id="caixasContainer" style="display: flex; gap: 10px; margin-top: 10px;"></div>
                 </div>
             </article>
         </section>
 
         <section id="lista">
-            <h2>Condições</h2>
-            <!-- Desafio 1 -->
+            <h2>Listas</h2>
             <article>
-                <h4>Votar e Dirigir</h4>
-                <p>Crie um programa que peça a idade de uma pessoa e fale se ela pode votar e/ou dirigir</p>
+                <h4>Mostrar itens da lista</h4>
+                <p>Ao clicar no botão, mostre todos os itens de uma lista no console ou na tela.</p>
                 <div class="resposta">
-
+                    <ul id="listaSimples">
+                        <li>Maçã</li>
+                        <li>Banana</li>
+                        <li>Laranja</li>
+                    </ul>
+                    <button id="btnMostrarItens">Mostrar Itens</button>
+                    <div id="resultadoLista"></div>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Adicionar item à lista</h4>
+                <p>Digite um item no campo de texto e clique em "Adicionar" para incluí-lo na lista abaixo.</p>
                 <div class="resposta">
-
+                    <input type="text" id="novoItem" placeholder="Digite um item" />
+                    <button id="btnAdicionar">Adicionar</button>
+                    <ul id="listaAdicionada"></ul>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Remover item clicado</h4>
+                <p>Cada item da lista deve ser clicável. Ao clicar, ele é removido da lista.</p>
                 <div class="resposta">
-
+                    <ul id="listaRemover">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
                 </div>
             </article>
         </section>
 
         <section id="matriz">
-            <h2>Condições</h2>
-            <!-- Desafio 1 -->
+            <h2>Matriz</h2>
             <article>
-                <h4>Votar e Dirigir</h4>
-                <p>Crie um programa que peça a idade de uma pessoa e fale se ela pode votar e/ou dirigir</p>
+                <h4>Mostrar valores de uma tabela</h4>
+                <p>Ao clicar no botão, mostre os valores de cada célula da tabela.</p>
                 <div class="resposta">
-
+                    <table border="1" id="tabela">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    <button id="btnLerTabela">Ler Tabela</button>
+                    <div id="saidaTabela"></div>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Destacar diagonal principal</h4>
+                <p>Crie um botão que, ao ser clicado, destaque (com cor) a diagonal principal da tabela abaixo.</p>
                 <div class="resposta">
-
+                    <table border="1" id="matrizDiagonal">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                    <button id="btnDestacar">Destacar Diagonal</button>
                 </div>
             </article>
 
             <article>
-                <h4></h4>
-                <p></p>
+                <h4>Gerar matriz NxN</h4>
+                <p>Digite um número N e clique em "Gerar" para criar uma matriz (tabela) NxN preenchida com números
+                    aleatórios.</p>
                 <div class="resposta">
-
+                    <input type="number" id="inputTamanho" placeholder="Digite N" />
+                    <button id="btnGerarMatriz">Gerar Matriz</button>
+                    <div id="matrizGerada" style="margin-top: 10px;"></div>
                 </div>
             </article>
         </section>
